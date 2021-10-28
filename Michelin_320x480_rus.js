@@ -935,7 +935,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				  console.log(aX);	
 		  
 				  if (!thisIsVariable ) {
-					if (aX == 0) {
+					if (aX != 0) {
 					  console.log('go 66');
 						console.log(aX);
 					     this.gotoAndPlay(66);
