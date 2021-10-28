@@ -921,7 +921,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 						})
 						.catch(console.error);
 					} else {
-					  console.log('suka');
 					  window.addEventListener(
 						"devicemotion",
 						accelerometerUpdate.bind(that),
@@ -932,12 +931,10 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		  
 				function accelerometerUpdate(event) {
 				  var aX = event.accelerationIncludingGravity.x * 10;
-				  console.log(aX);	
 		  
 				  if (!thisIsVariable ) {
 					if (aX != 0) {
 					  console.log('go 66');
-						console.log(aX);
 					     this.gotoAndPlay(66);
 						thisIsVariable = true
 					}
@@ -978,7 +975,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 					if (!thisIsVariable2 ) {
 					  if (aX < -30) {
 						 console.log('go 132');
-						  console.log(aY);
 						this.gotoAndPlay(132);
 						  thisIsVariable2 = true
 					  }
